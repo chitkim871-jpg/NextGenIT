@@ -36,34 +36,34 @@ button.pack()
 
 result_label=tk.Label(mainWindow,text="Operation Result is : ")
 result_label.pack()
-
-def Add():
-    a=int(First_Value.get())
-    b=int(Second_Value.get())
-    add=a+b
-    result_label.config(text = "Operation Result is : " +str(add))
+#feature1
+# def Add():
+#     a=int(First_Value.get())
+#     b=int(Second_Value.get())
+#     add=a+b
+#     result_label.config(text = "Operation Result is : " +str(add))
     
     
     
+#feature2  
+# def Sub():
+#     a=int(First_Value.get())
+#     b=int(Second_Value.get())
+#     Sub=a-b
+#     result_label.config(text = "Operation Result is : " +str(Sub))
     
-def Sub():
-    a=int(First_Value.get())
-    b=int(Second_Value.get())
-    Sub=a-b
-    result_label.config(text = "Operation Result is : " +str(Sub))
-    
-    
-def Mul():
-    a=int(First_Value.get())
-    b=int(Second_Value.get())
-    Mul=a*b
-    result_label.config(text = "Operation Result is : " +str(Mul))
+#bugfix    
+# def Mul():
+#     a=int(First_Value.get())
+#     b=int(Second_Value.get())
+#     Mul=a*b
+#     result_label.config(text = "Operation Result is : " +str(Mul))
     
 def Div():
     a=int(First_Value.get())
     b=int(Second_Value.get())
     try:
-        Div=a/b
+        Div=a%b #change (% to /)
         
     except:
         messagebox.showerror("Error", "Zero Division Error. Please Enter Non Zero value in denominator.")
