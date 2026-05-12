@@ -53,11 +53,11 @@ def Sub():
     result_label.config(text = "Operation Result is : " +str(Sub))
     
 #bugfix    
-# def Mul():
-#     a=int(First_Value.get())
-#     b=int(Second_Value.get())
-#     Mul=a*b
-#     result_label.config(text = "Operation Result is : " +str(Mul))
+def Mul():
+    a=int(First_Value.get())
+    b=int(Second_Value.get())
+    Mul=a*b
+    result_label.config(text = "Operation Result is : " +str(Mul))
     
 def Div():
     a=int(First_Value.get())
