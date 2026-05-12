@@ -63,7 +63,7 @@ def Div():
     a=int(First_Value.get())
     b=int(Second_Value.get())
     try:
-        Div=a%b #change (% to /)
+        Div=a/b #change (% to /)
         
     except:
         messagebox.showerror("Error", "Zero Division Error. Please Enter Non Zero value in denominator.")
